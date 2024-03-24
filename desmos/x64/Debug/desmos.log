@@ -1,0 +1,3 @@
+﻿  desmos.cpp
+C:\Users\ak-47\source\repos\desmos\desmos\desmos.cpp(59,28): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+  desmos.vcxproj -> C:\Users\ak-47\source\repos\desmos\x64\Debug\desmos.exe
