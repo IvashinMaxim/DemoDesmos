@@ -231,15 +231,10 @@ public:
 				gnuplotCommands << "print 'Dot of intersection : (" << intersection.x << ", " << intersection.y << ")'\n";
 			}
 		}
-		std::cout << "Коэффициенты квадратного уравнения:\n";
-		std::cout << "a = " << history[indexOfQuad].a << '\n';
-		std::cout << "b = " << history[indexOfQuad].b << '\n';
-		std::cout << "c = " << history[indexOfQuad].c << '\n';
+
 		// Построение графиков после настройки точек пересечения
 		gnuplotCommands << "plot " << history[indexOfLin].a << " * x + " << history[indexOfLin].b << " title 'y=" << history[indexOfLin].a << "x + " << history[indexOfLin].b << "'\n";
 		gnuplotCommands << "replot " << history[indexOfQuad].a << " * x**2 + " << history[indexOfQuad].b << " * x + " << history[indexOfQuad].c << " title 'y=" << history[indexOfQuad].a << "x^2 + " << history[indexOfQuad].b << "x + " << history[indexOfQuad].c << "'\n";
-
-
 
 		// Закрыть файл с командами Gnuplot
 		gnuplotCommands.close();
@@ -295,7 +290,12 @@ int main() {
 			std::cin >> linIndex;
 			std::cout << "Введите индекс квадратного уравнения: ";
 			std::cin >> quadIndex;
-			solver.createPlot(linIndex,quadIndex);
+			if (linIndex>= 0 && quadIndex >= 0 && linIndex < solver.getHistorySize()&& quadIndex < solver.getHistorySize()) {
+				solver.createPlot(linIndex, quadIndex);
+			}
+			else {
+				std::cout << "Неверный индекс.\n";
+			}
 			break;
 		case 'e':
 			std::cout << "Программа завершена.\n";
