@@ -1,0 +1,5 @@
+﻿  UnitTest.cpp
+C:\Users\ak-47\source\repos\desmos\desmos\desmos.cpp(144,22): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "/UnitTest.cpp")
+  
+  UnitTest.vcxproj -> C:\Users\ak-47\source\repos\desmos\x64\Debug\UnitTest.dll
