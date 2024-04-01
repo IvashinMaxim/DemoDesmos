@@ -310,4 +310,44 @@ namespace UnitTest
 			plotFile.close();
 		}
 	};
+
+	TEST_CLASS(FindIntersectionsTest)
+	{
+	public:
+		TEST_METHOD(FindIntersections_TwoIntersections)
+		{
+			// Arrange
+			double a_linear = 2.0;
+			double b_linear = 4.0;
+			double a_quad = 1.0;
+			double b_quad = 5.0;
+			double c_quad = 4.0;
+
+			// Act
+			std::vector<Point> intersections = findIntersections(a_linear, b_linear, a_quad, b_quad, c_quad);
+
+			// Assert
+			Assert::AreEqual<size_t>(2u, intersections.size());
+			Assert::AreEqual(0.0, intersections[0].x);
+			Assert::AreEqual(4.0, intersections[0].y);
+			Assert::AreEqual(-3.0, intersections[1].x);
+			Assert::AreEqual(-2.0, intersections[1].y);
+		}
+
+		TEST_METHOD(FindIntersections_NoIntersections)
+		{
+			// Arrange
+			double a_linear = -1.0;
+			double b_linear = 3.0;
+			double a_quad = 1.0;
+			double b_quad = -3.0;
+			double c_quad = 5.0;
+
+			// Act
+			std::vector<Point> intersections = findIntersections(a_linear, b_linear, a_quad, b_quad, c_quad);
+
+			// Assert
+			Assert::AreEqual<size_t>(0u, intersections.size());
+		}
+	};
 }

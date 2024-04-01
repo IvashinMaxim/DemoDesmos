@@ -24,15 +24,7 @@ std::vector<Point> findIntersections(double a_linear, double b_linear, double a_
 	// Решаем квадратное уравнение, чтобы найти точки пересечения
 	double discriminant = b * b - 4 * a * c;
 
-	if (std::abs(discriminant) < 1e-10) {
-		// Если дискриминант близок к нулю, то есть один корень
-		double x_intersection = -b / (2 * a);
-		Point intersection;
-		intersection.x = x_intersection;
-		intersection.y = a_linear * x_intersection + b_linear;
-		intersections.push_back(intersection);
-	}
-	else if (discriminant > 0) {
+	if (discriminant > 0) {
 		// Если дискриминант положителен, есть два корня
 		double x1 = (-b + std::sqrt(discriminant)) / (2 * a);
 		double x2 = (-b - std::sqrt(discriminant)) / (2 * a);
