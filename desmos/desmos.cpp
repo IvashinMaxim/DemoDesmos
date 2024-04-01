@@ -71,6 +71,10 @@ private:
 
 public:
 
+	std::vector<EquationSolution> getHistory() const {
+		return history;
+	}
+
 	void addSolution(const std::string& type, const std::string& sol, double a, double b, double c) {
 		history.emplace_back(type, sol, a, b, c);
 	}
@@ -269,7 +273,12 @@ int main() {
 			solver.printHistory();
 			int index;
 			std::cout << "Введите индекс решения для обновления: ";
-			std::cin >> index;
+			if (!(std::cin >> index)) {
+				std::cin.clear();
+				std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				std::cout << "Некорректный ввод. Введите числа." << std::endl;
+				break;
+			}
 			if (index >= 0 && index < solver.getHistorySize()) {
 				solver.updateSolution(index);
 			}
@@ -280,16 +289,31 @@ int main() {
 		case 'd':
 			int delIndex;
 			std::cout << "Введите индекс решения для удаления: ";
-			std::cin >> delIndex;
+			if (!(std::cin >> delIndex)) {
+				std::cin.clear();
+				std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				std::cout << "Некорректный ввод. Введите числа." << std::endl;
+				break;
+			}
 			solver.deleteSolution(delIndex);
 			break;
 		case 'p':
 			int linIndex;
 			int quadIndex;
 			std::cout << "Введите индекс линейного уравнения: ";
-			std::cin >> linIndex;
+			if (!(std::cin >> linIndex)) {
+				std::cin.clear();
+				std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				std::cout << "Некорректный ввод. Введите числа." << std::endl;
+				break;
+			}
 			std::cout << "Введите индекс квадратного уравнения: ";
-			std::cin >> quadIndex;
+			if (!(std::cin >> quadIndex)) {
+				std::cin.clear();
+				std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				std::cout << "Некорректный ввод. Введите числа." << std::endl;
+				break;
+			}
 			if (linIndex>= 0 && quadIndex >= 0 && linIndex < solver.getHistorySize()&& quadIndex < solver.getHistorySize()) {
 				solver.createPlot(linIndex, quadIndex);
 			}

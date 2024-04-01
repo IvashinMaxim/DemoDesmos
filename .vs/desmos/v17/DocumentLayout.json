@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{628202F0-6ED8-4A6F-BF6D-D4A9664B0BAF}|desmos\\desmos.vcxproj|C:\\Users\\ak-47\\source\\repos\\desmos\\desmos\\desmos.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{628202F0-6ED8-4A6F-BF6D-D4A9664B0BAF}|desmos\\desmos.vcxproj|solutionrelative:desmos\\desmos.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA9E1771-D8AE-410A-B32F-FD776D3F017F}|UnitTest\\UnitTest.vcxproj|C:\\Users\\ak-47\\source\\repos\\desmos\\UnitTest\\UnitTest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BA9E1771-D8AE-410A-B32F-FD776D3F017F}|UnitTest\\UnitTest.vcxproj|solutionrelative:UnitTest\\UnitTest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +18,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UnitTest.cpp",
+              "DocumentMoniker": "C:\\Users\\ak-47\\source\\repos\\desmos\\UnitTest\\UnitTest.cpp",
+              "RelativeDocumentMoniker": "UnitTest\\UnitTest.cpp",
+              "ToolTip": "C:\\Users\\ak-47\\source\\repos\\desmos\\UnitTest\\UnitTest.cpp",
+              "RelativeToolTip": "UnitTest\\UnitTest.cpp",
+              "ViewState": "AQIAAKIAAAAAAAAAAAASwLgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-01T10:54:56.917Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -28,7 +45,7 @@
               "RelativeDocumentMoniker": "desmos\\desmos.cpp",
               "ToolTip": "C:\\Users\\ak-47\\source\\repos\\desmos\\desmos\\desmos.cpp",
               "RelativeToolTip": "desmos\\desmos.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAOAAAA",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAAAIUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-03-23T15:43:54.332Z",
               "EditorCaption": ""

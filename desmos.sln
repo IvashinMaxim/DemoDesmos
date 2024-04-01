@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "desmos", "desmos\desmos.vcxproj", "{628202F0-6ED8-4A6F-BF6D-D4A9664B0BAF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTest", "UnitTest\UnitTest.vcxproj", "{BA9E1771-D8AE-410A-B32F-FD776D3F017F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{628202F0-6ED8-4A6F-BF6D-D4A9664B0BAF}.Release|x64.Build.0 = Release|x64
 		{628202F0-6ED8-4A6F-BF6D-D4A9664B0BAF}.Release|x86.ActiveCfg = Release|Win32
 		{628202F0-6ED8-4A6F-BF6D-D4A9664B0BAF}.Release|x86.Build.0 = Release|Win32
+		{BA9E1771-D8AE-410A-B32F-FD776D3F017F}.Debug|x64.ActiveCfg = Debug|x64
+		{BA9E1771-D8AE-410A-B32F-FD776D3F017F}.Debug|x64.Build.0 = Debug|x64
+		{BA9E1771-D8AE-410A-B32F-FD776D3F017F}.Debug|x86.ActiveCfg = Debug|Win32
+		{BA9E1771-D8AE-410A-B32F-FD776D3F017F}.Debug|x86.Build.0 = Debug|Win32
+		{BA9E1771-D8AE-410A-B32F-FD776D3F017F}.Release|x64.ActiveCfg = Release|x64
+		{BA9E1771-D8AE-410A-B32F-FD776D3F017F}.Release|x64.Build.0 = Release|x64
+		{BA9E1771-D8AE-410A-B32F-FD776D3F017F}.Release|x86.ActiveCfg = Release|Win32
+		{BA9E1771-D8AE-410A-B32F-FD776D3F017F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
